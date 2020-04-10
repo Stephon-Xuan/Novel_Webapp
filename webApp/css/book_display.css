@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+div.book_display_bar ul.book_display_box{
+	padding:10px 10px 10px 20px;
+	
+}
+div.book_display_bar ul.book_display_box li{
+	float:left;
+	width:100%;
+	overflow:hidden;
+	border-bottom: 1px solid #DFDFDF;
+	padding-bottom:20px;
+}
+
+div.book_display_bar ul.book_display_box li  img{
+	float:left;
+	height:100px;
+	width:100px;
+	margin:10px 3px;
+}
+
+div.book_display_bar ul.book_display_box li  div.book_name{
+	margin-left:150px;
+	margin-top: 20px;
+	font-size:16px;
+}
+div.book_display_bar ul.book_display_box li  p.author{
+	margin-left:150px;
+	font-size:14px;
+	color:#989797;
+}
+div.book_display_bar ul.book_display_box li  img.download_switch{
+	float: right;
+	width: 30px;
+	height:30px;
+}

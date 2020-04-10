@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image: url(../images/bg/4.jpg);
+	background-size: 100% 170%;
+}
+ul.bookstack_box{
+	padding:10px 10px 10px 20px;
+	
+}
+ul.bookstack_box li{
+	float:left;
+	width:30%;
+	overflow:hidden;
+	border:5px solid #F8B818;
+	background-color:#FFFFFF;
+	border-top: #F5F4F4;
+	margin-left:-5px;
+	margin-top: 10px;
+}
+
+ul.bookstack_box li a img{
+	float:left;
+	height:100px;
+	width:100px;
+	margin:10px 3px;
+}
+
+ul.bookstack_box li a div.book_name{
+	margin-left: 10px;
+	font-size:14px;
+}
+ul.bookstack_box li a p.author{
+	margin-left: 10px;
+	font-size:12px;
+	color:#989797;
+}

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/login.css">
+    <title>登录</title>
+</head>
+
+<body>
+    <div class="big_Bar">
+        <div class="logoBar login_logo">
+            <div class="comWidth">
+                <div class="logo fl">
+                    <img src="images/icons/图标_小说.png" alt="#">
+                </div>
+                    <h3 class="welcome_title">小说网站后台系统</h3>
+                </div>
+            </div>
+            <!---2-->
+            <div class="Box">
+                <div class="cont">
+                    <ul class="box">
+                        <li>
+                            <span onclick="select(this)" name="select">超级管理员</span>
+                            <span class="active" onclick="select(this)" name="select">管理员</span>
+                        </li>
+                        <li class="mb_10">
+                        	<input type="text" class="input_box user_icon_1" id="user" value="" onclick="hide(this)">
+                        </li>
+                        <li class="mb_10">
+                        	<input type="password" class="input_box user_icon_2" id="pw" value="" onclick="hide(this)">
+                        </li>
+                        <li>
+                        	<p class="hide" id="tip">账号错误</p>
+                        </li>
+                        <li class="btn_box" >
+                        	<button class="btn" onclick="button(this)">登录</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="js/login.js"></script>>
+</body>
+
+</html>

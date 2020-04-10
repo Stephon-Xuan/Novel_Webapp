@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: #fff;
+}
+
+div#read_bar div.blank_bar{
+	height:70px;
+}
+div#read_bar div.read_box{
+	top:0;
+	left:0;
+	padding:10px;
+	font-size:14px;
+	background-color: #1297DC;
+	width: 100%;
+	position:fixed;
+	z-index:999;
+}
+div#read_bar div.read_box p{
+	display: inline-block;
+}
+div#read_bar div.read_box img{
+	height:20px;
+	width:20px;
+	float:right;
+	margin-right:30px;
+}
+div#read_bar div.read_box b {
+	float:left;
+	margin-right: -10px;
+}
+div.read_content_bar div.read_title{
+	margin-top:10px;
+	padding:10px;
+	text-align: center;
+	font-size:18px;
+	font-weight:bold;
+	
+}
+div.read_content_bar div.read_content{
+	padding:5px 20px;
+	text-indent:2em;
+	text-align: justify;
+}
+div.read_content_bar div.read_content text{
+    line-height:50px;
+	font-size:18px;
+	padding:10px;
+	overflow:auto;
+	height:70%;
+}
+div.read_content_bar div.chapter_updown ul.chapter_updown_box{
+	width:60%;
+	padding:0 20%;
+	text-align:center;
+	margin-bottom:20px;
+}
+div.read_content_bar div.chapter_updown ul.chapter_updown_box li{
+	float:left;
+	width:30%;
+	padding:2% 5%;
+	margin:0 5%;
+	background-color:#e22b2b;
+	border-radius:8%;
+	font-size:16px;
+	color:#FFF;
+}
+div#read_bar div.read_nav{
+	position:fixed;
+	z-index: 999;
+	bottom:0px;
+	width: 100%;
+	background-color:#d1d2d6;
+	padding:10px 0;
+}
+div#read_bar div.read_nav span{
+	float:left;
+	width:25%;
+	text-align: center;
+}
+div#read_bar div.read_nav span img{
+	height:20px;
+	width:20px;
+}
+div#read_bar div.chapter_nav{
+	width:50%;
+	height:30%;
+	float:letf;
+	background-color:#0090ff;
+	position:fixed;
+	bottom:100px;
+	left:0;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+div#read_bar div.chapter_nav ul li{
+	font-size:12px;
+	padding:5px;
+	background-color: #FFFFFF;
+	margin-top:2px;
+}
+div#read_bar div.chapter_nav ul li p{
+	display: inline-block;
+}

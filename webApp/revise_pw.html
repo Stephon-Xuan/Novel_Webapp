@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="frozenui-2.0.0/src/css/frozenui.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/back.css">
+    <script type="text/javascript" src="zepto-master/src/zepto.js"></script>
+    <script type="text/javascript" src="zepto-master/src/touch.js"></script>
+    <script type="text/javascript" src="zepto-master/src/fx.js"></script>
+    <script type="text/javascript" src="zepto-master/src/event.js"></script>
+    <script type="text/javascript" src="zepto-master/src/ajax.js"></script>
+    <title>revise_pw</title>
+</head>
+
+<body>
+	<div class="account_num clearfix">
+        <div class="back_bar fl">
+            <img src="images/icon/back.png" class="back_action">
+            <span class="color1">修改密码</span>
+        </div>
+        <div class="account_num_box">
+            <div class="password_box_1 margin-top">
+                <input type="password" class="input_size input_img_2" name="pw_0" id="pwId_0" value="" placeholder="原来密码">
+            </div>
+            <div class="password_box_2  hide margin-top">
+                <input type="password" class="input_size input_img_2" name="pw_1" id="pwId_1" value="" placeholder="新密码">
+                <input type="password" class="input_size input_img_3" name="pw" id="pwId" value="" placeholder="确认新密码">
+            </div>
+
+            <button type="submit" onClick="" class="button_color" id="revise">确认</button>
+        </div>
+       <div id="tip_bar">
+        <div class="tip_box hide">
+            <span>密码错误</span>
+        </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/revise_pw.js"></script>
+</body>
+
+</html>

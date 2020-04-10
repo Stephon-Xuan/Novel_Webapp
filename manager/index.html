@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head style="min-width: 1180px;">
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="css/reset.css">
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+    <title>index</title>
+</head>
+
+<body style="min-width: 1180px;">
+    <!-- 后台系统标题栏-begin -->
+    <div class="logoBar login_logo">
+        <div class="comWidth">
+            <div class="logo fl">
+                <img src="images/icons/图标_小说.png" alt="#">
+            </div>
+                <h3 class="welcome_title">小说网站后台系统</h3>
+            </div>
+            <div class="user_bt fr">
+                <img src="images/icons/用户.png" id="user_img">
+                <span name="pr">超级管理员</span>
+                <div id="user_mes" class="hide">
+                    <ul class="pr" style="float:left;">
+                        <li name="pr"><span>账号：</span><span>13824004647</span></li>
+                        <li name="pr"><span>管理员级别：</span><span>超级管理员</span></li>
+                        <li name="pr"><span>性别：</span><span>男</span></li>
+                        <li name="pr" style="margin-top:50px;text-align: center;padding:2px;background-color:red">退出登录</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 后台系统标题栏-end -->
+        <!-- 所有信息管理-begin -->
+        <div class="manage_bar">
+            <!-- 左导航-begin -->
+            <div class="manage_nav fl">
+                <dl class="">
+                    <dt name="manage_dt">账号管理</dt>
+                    <dd name="manage_dd">管理员用户管理</dd>
+                    <dd name="manage_dd">小说用户管理</dd>
+                </dl>
+                <dl class="">
+                    <dt name="manage_dt">用户信息管理</dt>
+                </dl>
+                <dl class="">
+                    <dt name="manage_dt">小说分类设置</dt>
+                </dl>
+                <dl class="">
+                    <dt name="manage_dt">小说书籍管理</dt>
+                    <dd name="manage_dd">分类</dd>
+                   <!--  <dd name="manage_dd">排行榜</dd>
+                    <dd name="manage_dd">热门</dd>
+                    <dd name="manage_dd">推荐</dd>
+                    <dd name="manage_dd">轮播图</dd> -->
+                </dl>
+            </div>
+            <!-- 左导航-end -->
+            <!-- 固定右面板-begin -->
+            <div class="manage_box fl clearfix">
+                <!-- 管理员用户管理-begin -->
+                <div class="manage_control" name="manage_control">
+                    <div class="title">
+                        <b>管理员</b>
+                        <span>账号</span>
+                        <p>撤销为普通用户</p>
+                    </div>
+                    <ul class="manage_num fl" id="manage_num_load">
+                    </ul>
+                </div>
+                <!-- 管理员用户管理-end -->
+                <!-- 小说用户管理-begin -->
+                <div class="manage_control" name="manage_control">
+                    <div class="title">
+                        <b>用户</b>
+                        <span>账号</span>
+                        <p>升级为管理员</p>
+                    </div>
+                    <ul class="manage_num fl" id="user_num_load">
+                    </ul>
+                </div>
+                <!-- 小说用户管理-end -->
+                <!-- 用户信息管理-begin -->
+                <div class="manage_control" name="manage_control">
+                    <div class="title color_2">
+                        <h5 style="width:120px">用户</h5>
+                        <b style="width:120px">账号</b>
+                        <span style="width:120px">言辞不当次数</span>
+                        <p style="width:120px">禁言</p>
+                    </div>
+                    <ul class="manage_num fl" id="user_deal_load">
+                    </ul>
+                </div>
+                <!-- 用户信息管理-end -->
+                <!-- 小说分类设置-begin -->
+                <div class="manage_control" name="manage_control">
+                    <div class="title color_3 ">
+                        <b>类型序号</b>
+                        <span>类型</span>
+                        <p id="add_type">添加</p>
+                    </div>
+                    <ul class="manage_num fl" id="type_load">
+                    </ul>
+                    <div id="addType_box" class="hide">
+                        <input type="text" id="addType_text" value="" placeholder="输入最多四个字">
+                        <p id="cancelSubmit" style="display:inline-block;width:50px;">取消</p>
+                        <p id="addType_submit" style="display:inline-block;width:50px;">提交</p>
+                    </div>
+                </div>
+                <!-- 小说分类设置-end -->
+                <!-- 小说书籍管理-begin -->
+                <!-- 小说书籍管理-分类-begin -->
+                <div class="manage_control" name="manage_control" id="book_hide">
+                    <div class="title color_4" style="width:620px; margin-left:-60px;padding:10px 0;">
+                        <h5 style="width:120px;">序号</h5>
+                        <b style="width:120px;">书籍名称</b><span style="width:100px;">修改</span>
+                        <p style="width:120px;" id="book_add">添加书籍</p>
+                        <h3 style="width:120px;display:inline-block;">添加章节</h3>
+                        <!-- <h4 style="width:100px;">添加展示</h4> -->
+                        <!-- 加多添加展示就总宽度620px -->
+                    </div>
+                    <ul class="manage_num novel_cg fl" id="book_list">
+                    </ul>
+                    <div id="chapter_box">
+                        <p>书籍类型</p>
+                        <ul id="chapter_ul">
+                        </ul>
+                    </div>
+                </div>
+                <div id="tip_bar" class="hide">
+                    <p id="tip_detail">小说介绍</p>
+                    <p id="tip_chapter">小说章节</p>
+                    <p id="cancel" style="width:40px;height:25px;margin:auto;background-color:red;margin-top:10px;color:#fff;">取消</p>
+                </div>
+                <!-- 小说书籍管理-分类-end -->
+                <!-- 小说书籍管理-分类-修改书籍-begin -->
+                <div class="revise hide" id="reviseBook_box">
+                    <p id="reviseBook_back" style="width:30px;">返回</p>
+                    <h2>修改书籍<b></b> <b id="revise_save">保存</b></h2>
+                    <div class="revise_right fr">
+                        <img src="images/bg/bg.jpg" id="revise_path">
+                    </div>
+                        <div class="revise_left fl">
+                            <div>
+                                <span>书名:</span>
+                                <input type="text" id="revise_name">
+                            </div>
+                            <div>
+                                <span>作者:</span>
+                                <input type="text" id="revise_author">
+                            </div>
+                            <div>
+                                <span>类型:<span id="revise_type"></span></span>
+                                <!-- <select id="revise_type">
+                                    <option>现代言情</option>
+                                    <option>古代言情</option>
+                                </select> -->
+                            </div>
+                            <div>
+                                <span>状态:</span>
+                                <select id="revise_style">
+                                    <option>完结</option>
+                                    <option>连载</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span>简介:</span>
+                                <textarea id="revise_message"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 小说书籍管理-分类-修改书籍-end -->
+                    <!-- 小说书籍管理-分类-添加书籍-begin -->
+                    <div class="revise hide" id="addBook_box">
+                        <p id="addBook_back" class="back">返回</p>
+                        <h2>添加书籍 <!-- <b>保存</b> --></h2>
+                        <div class="revise_right fr">
+                            <img src="images/bg/bg.jpg" id="path">
+                            <p>上传封面</p>
+                        </div>
+                        <div class="revise_left fl">
+                            <div>
+                                <span>书名:</span>
+                                <input type="text" id="name">
+                            </div>
+                            <div>
+                                <span>作者:</span>
+                                <input type="text" id="author">
+                            </div>
+                            <div>
+                                <span>类型:</span>
+                                <span id="type">古代言情</span>
+                            </div>
+                            <div>
+                                <span>状态:</span>
+                                <select id="style">
+                                    <option>完结</option>
+                                    <option>连载</option>
+                                </select>
+                            </div>
+                            <div>
+                                <span>简介:</span>
+                                <textarea id="message"></textarea>
+                            </div>
+                            <div>
+                                <span class="add_chapter" id="addBook_submit">保存并返回</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 小说书籍管理-分类-添加书籍-end -->
+                    <!-- 小说书籍管理-分类-添加章节-begin -->
+                    <div id="chpter_box" class="hide">
+                        <p id="chapter_back">返回</p>
+                        <h2>添加章节 <b id="bookChapter_save">保存</b></h2>
+                        <div class="chapter_left fl">
+                            <ul class="chapter_detail">
+                                <li>章数：&nbsp;&nbsp;&nbsp;
+                                	第<input type="text" id="chapter_num" class="chpter_input">章
+                                </li>
+                                <li>章名：
+                                    <input type="text" id="chapter_name">
+                                </li>
+                                <li>内容：
+                                    <textarea id="chapter_content"></textarea>
+                                </li>
+                                <ul>
+                        </div>
+                        <div class="chapter_right fr" style="margin-top:-350px;margin-right:0px;">
+                            <p>
+                                <span>已添加章节</span>&nbsp;&nbsp;&nbsp;
+                                <span>修改</span>&nbsp;&nbsp;&nbsp;
+                                <span>删除</span>
+                            </p>
+                            <ul class="chapter_nav" style="height:120px;overflow-y:auto;" id="chapter_Nav">
+                                <!-- <li><span>第1章</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>修改</span>&nbsp;&nbsp;&nbsp;<span>删除</span></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 小说书籍管理-分类-添加章节-end -->
+                    <!-- 小说书籍管理-分类-修改小说章节--begin -->
+                    <div class="manage_control hide" id="chapter_detail_box" style="position: fixed;top:100px;left:450px;width:400px;height:500px;background-color:#929292;padding:5px 0 20px 0;">
+                        <div class="back">
+                            <h4 id="chapter_detail_back">返回<h4>
+                        </div>
+                    <div class="novel">
+                        <h5>小说：</h5>
+                            <h5 id = "bookname">斗罗大陆</h5>
+                        </div>
+                     <div class="title color_2" style="padding:1px;width:350px;margin:auto;">
+                        <h5 style="width:80px;">章名</h5>
+                        <b style="width:80px;">章节</b>
+                        <span style="width:80px;">内容</span>
+                        <p style="width:80px;">评论</p>
+                    </div>
+                    <ul class="manage_num fl" style="width:350px;margin-left:25px;overflow-x:hidden;height:430px;" id="book_detail_chapter">
+                    </ul>
+                   <!--  <p class="next">下一页</p>
+                    <p class="total">共<span>16</span>页,共<span>144</span>章</p> -->
+                </div>
+                <!-- 小说书籍管理-分类-修改小说章节--end -->
+                <!-- 小说书籍管理-分类-修改小说章节-内容-begin -->
+                <div class="manage_control hide" id="chapter_detail_box_content" style="position: fixed;top:100px;left:345px;width:600px;height:500px;background-color:#929292;padding:10px 0;">
+                    <div class="back" >
+                        <h4 id="content_back">返回<h4>
+                    </div>
+                    <div class="novel">
+                        <h5>小说：</h5>
+                        <!-- 章名 -->
+                        <h5 id = "bookname_ct"></h5>
+                        <!-- 章数 -->
+                        <h5 id = "chapterNum_ct"></h5>
+                        <h5 id="content_save">保存</h5>
+                    </div>
+                    <div class="novel_content">
+                    <textarea style="width:580px;height:440px;padding:10px;" id="content">
+                    	<!-- 初代史莱克七怪，之所以叫史莱克七怪，有几个原因：一个是因为他们是出身史莱克学院的怪物天才，然后就是因为当时整个学院也只有他们七个人而已；而最重要，也是令史莱克学院为之扬名的，就是他们代表学院所参加的那一场全大陆高级魂师学院精英大赛。在那场大赛开始之时，没有人看好史莱克七怪，史莱克学院也是籍籍无名。但是，史莱克七怪却凭借着自身实力，逐渐杀出重围，并且冲进了最后的决赛。他们决赛的对手，来自于强大的武魂殿，在整体实力完全逊色于对手的情况下。在史莱克七怪灵魂人物唐三的率领下，史莱克七怪力战而胜，从而奠定了史莱克学院未来成为大陆第一学院的基础。史莱克七怪之名也从此传扬开来。
+为了感念初代史莱克七怪为学院所作的贡献，每隔五年，学院都会选出新的史莱克七怪，而他们，也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛，而初代史莱克七怪则被后世誉为“史莱克七圣”。天才，然后就是因为当时整个学院也只有他们七个人而已；而最重要，也是令史莱克学院为之扬名的，就是他们代表学院所参加的那一场全大陆高级魂师学院精英大赛。在那场大赛开始之时，没有人看好史莱克七怪，史莱克学院也是籍籍无名。但是，史莱克七怪却凭借着自身实力，逐渐杀出重围，并且冲进了最后的决赛。他们决赛的对手，来自于强大的武魂殿，在整体实力完全逊色于对手的情况下。在史莱克七怪灵魂人物唐三的率领下，史莱克七怪力战而胜，从而奠定了史莱克学院未来成为大陆第一学院的基础。史莱克七怪之名也从此传扬开来。 -->
+                    </textarea>
+                    </div>
+                    <!-- <p class="next">下一页</p>
+                    <p class="total">共<span>16</span>页,共<span>144</span>章</p> -->
+                </div>
+                <!-- 小说书籍管理-分类-修改小说章节-内容-end -->
+                <!-- 小说书籍管理-分类-修改小说章节-评论-begin -->
+                <div class="manage_control hide" id="chapter_detail_box_comment" style="position: fixed;top:100px;left:345px;width:600px;height:500px;background-color:#929292;padding:10px 0;">
+                    <div class="back">
+                        <h4 id="comment_back">返回<h4>
+                        </div>
+                    <div class="novel">
+                        <h5>小说：</h5>
+                        <h5 id = "bookname_cm"></h5>
+                        <h5 id = "chapterNum_cm"></h5>
+                    </div>
+                    <div id="novel_comment">
+                        <div class="title" style="padding:0;width:580px;margin:auto;">
+                        <span style="text-align:left;">用户</span>
+                        <p style="display: inline-block;width:270px;">评论内容</p>
+                        <b>状态</b>
+                    </div>
+                    <ul id = "comment_load">
+                     <!--    <li>
+                            <span>13824002627</span>
+                            <p>
+                                奠定了史莱克学院未来成为大陆第一学院的基础也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛奠定了史莱克学院未来成为大陆第一学院的基础也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛奠定了史莱克学院未来成为大陆第一学院的基础也将代表学院参加五年一度的全大陆高级魂师学院斗魂大赛
+                            </p>
+                            <b>显示</b>
+                        </li> -->
+                    </ul>               
+                    </div>
+                    <!-- <p class="next">下一页</p>
+                    <p class="total">共<span>0</span>页</p> -->
+                </div>
+                <!-- 小说书籍管理-分类-修改小说章节-评论-end -->
+            </div>
+             <!-- 固定右面板-end -->
+        </div>
+        <!-- 所有信息管理-end -->
+        <!-- 所有js加载-begin -->
+           <script type="text/javascript" src="js/index.js"></script>
+           <!-- 左边导航 -->
+           <script type="text/javascript" src="js/left_nav.js"></script>
+           <!-- 个人信息 -->
+           <script type="text/javascript" src="js/pr_mes.js"></script>
+           <!-- 账号管理-管理员用户管理 -->
+           <script type="text/javascript" src="js/management-manager.js"></script>
+           <!-- 账号管理-小说用户管理 -->
+           <script type="text/javascript" src="js/management-user.js"></script>
+           <!-- 用户信息管理 -->
+           <script type="text/javascript" src="js/forbidden.js"></script>
+           <!-- 小说分类设置 -->
+           <script type="text/javascript" src="js/class.js"></script>
+           <!-- 小说书籍管理-分类书籍 -->
+           <script type="text/javascript" src="js/bookDeal_sort.js"></script>
+           <!-- 所有js加载-end -->
+       </body>
+
+</html>

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* CSS Document */
+body {
+    background-color: #fff;
+}
+
+div.account_num{
+	width:100%;
+    overflow: hidden;
+}
+div.account_num div.account_num_box{
+	margin-top:30%;
+	text-align: center;
+
+}
+div.account_num div.account_num_box img{
+    width:25%;
+    height:25%;
+}
+div.account_num div.account_num_box span{
+	display:block;
+	font-size:18px;
+	margin-bottom:10%;
+}
+input.input_size {
+	width:60%;
+    padding: 5px 30px;
+    border-bottom: 1px solid #C9C9C9;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+
+div.account_num div.account_num_box input.input_img_1 {
+    background: url(../images/icon/login_user.png)left no-repeat;
+    background-size: 25px 25px;
+}
+
+div.account_num div.account_num_box input.input_img_2 {
+    background: url(../images/icon/密码.png)left no-repeat;
+    background-size: 25px 25px;
+}
+div.account_num div.account_num_box input.input_img_3 {
+    background: url(../images/icon/确认密码.png)left no-repeat;
+    background-size: 25px 25px;
+}
+div.account_num  button {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #FFF;
+    margin: auto;
+    padding: 10px 100px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    background-color: #4270EC;
+}
+
+div.account_num div.account_num_box div.pw_deal {
+    margin-top: -10px;
+    padding: 10px 10px 80px 10px;
+}
+
+div.account_num div.account_num_box div.pw_deal ul a li {
+    text-align: center;
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    color: #4270EC;
+}
+
+/*注册*/
+div.account_num  p {
+    font-size: 18px;
+    color: #4270EC;
+    margin-left: -80%;
+}
+
+div.account_num  button.button_color {
+	margin-top:10%;
+    background-color: #E4191C;
+}
+div.account_num div#tip_bar div.tip_box{
+    text-align:center;
+    width:40%;
+    margin-left:30%;
+    margin-top:50px;
+}
+div.account_num div#tip_bar div.tip_box span{
+    color:red;
+    font-size:16px;
+}
+/*修改密码*/
+.margin-top{
+    margin-top:80%;
+}

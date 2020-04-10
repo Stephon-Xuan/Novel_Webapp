@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2018-12-13 16:14:17
+ * @version $Id$
+ */
+/*logo*/
+div.big_Bar{
+    height:600px;
+     background:url("../images/bg/bg.jpg")0 80px no-repeat;
+    background-size: cover;
+     
+}
+div.big_Bar div.logoBar {
+    height: 85px;
+    background-color: #1D7AD9;
+   
+}
+
+div.big_Bar div.logoBar div.comWidth div.logo {
+    padding-left: 41px;
+    padding-top: 13px;
+}
+div.big_Bar div.logoBar div.comWidth div.logo img{
+	height: 50px;
+	width:50px;
+}
+/**/
+div.big_Bar div.logoBar div.comWidth {
+    width: 460px;
+    margin-left: auto;
+    margin: auto;
+}
+
+div.big_Bar div.logoBar div.comWidth div.logo {
+    margin-left: 60px;
+}
+
+div.big_Bar div.logoBar div.comWidth h3.welcome_title {
+    font: 22px/85px "Microsoft YaHei", "微软雅黑";
+    color: #FFF;
+    float: left;
+    padding-left: 24px;
+}
+
+div.Box {
+    width: 458px;
+    border: #999 solid 1px;
+    margin: 10px auto;
+    position: relative;
+
+}
+
+div.Box  div.cont {
+    padding: 15px 76px;
+}
+div.Box  div.cont ul.box li:first-of-type{
+    margin:20px auto;
+    width:90%;
+    height:30px;
+    text-align: center;
+
+}
+div.Box  div.cont ul.box li span{
+    float:left;
+    text-align: center;
+    width:49%;
+    height:30px;
+    line-height:30px;
+     border:1px solid red;
+     font-size:16px;
+    }
+div.Box  div.cont ul.box li span:first-of-type{
+    border-radius:5px 0 0 5px;
+    border-right:none;
+}
+div.Box  div.cont ul.box li span:nth-child(2){
+    border-radius:0  5px  5px 0;
+    border-left:none;
+}
+.active{
+    background-color:red;
+}
+/*账号密码错误提示*/
+div.Box  div.cont ul.box li:nth-child(4){
+    position:fixed;
+    z-index: 999;
+    font-size:14px;
+    margin:0 auto;
+    text-align:center;
+    color:red;
+    width:310px;
+}
+div.Box  div.cont ul.box li input.input_box {
+	margin:0 auto;
+    border: #999 solid 1px;
+    border-radius:5px;
+    height: 32px;
+    line-height: 32px\9;
+    text-indent: 5px;
+    width: 93%;
+    padding:5px 2px 5px 22px;
+    font-size:16px;
+}
+
+.user_icon_1 {
+    background: url("../images/icons/登录.png")left center no-repeat;
+    background-size:25px 25px;
+}
+.user_icon_2 {
+    background: url("../images/icons/密码.png")left center no-repeat;
+    background-size:25px 25px;
+}
+.mb_10 {
+    margin-bottom: 20px;
+}
+div.Box{
+	margin-top: 120px;
+}
+div.Box  div.cont ul.box li.btn_box{
+	width: 309px;
+	margin-top:50px;
+	padding:0 50px;
+}
+div.Box  div.cont ul.box li button.btn {
+	border-style:none;
+	overflow: hidden;
+	text-align: center;
+	line-height:36px;
+    width: 209px;
+    background-color:#40a6c4;
+    font-size:20px;
+    color:#fff;
+    border-radius:10px;
+}
+div.Box  div.cont ul.box li button.color_2{
+    background-color:red;
+}

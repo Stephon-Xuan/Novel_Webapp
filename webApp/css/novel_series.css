@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+/*小说系列 begin*/
+div.series_bar{
+	background-color:#FDFDFD; 
+}
+.top{
+	margin-top:8%;
+}
+
+div.series_bar div.novel_bar{
+	border:1px solid #F4EFEF;
+	overflow: hidden;
+}
+div.series_bar div.novel_bar div.novel_nav{
+	margin-top:10px;
+}
+div.series_bar div.novel_bar div.novel_nav span{
+	color: #EF2E31;
+	font-size:18px;
+	margin-left:8px;
+	vertical-align: middle;
+}
+div.series_bar div.novel_bar div.novel_nav b{
+	font-size:16px;
+	vertical-align: middle;
+}
+div.series_bar div.novel_bar ul.novel_box{
+	margin:10px auto;
+	overflow: hidden;
+}
+div.series_bar div.novel_bar ul.novel_box li{
+	padding:5px;
+	overflow:hidden;
+}
+
+div.series_bar div.novel_bar ul.novel_box li img{
+	float:left;
+	height:120px;
+	width:100px;
+	margin:10px 10px;
+}
+div.series_bar div.novel_bar a.more{
+	vertical-align: middle;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	color:#989797;
+	float: right;
+	margin-right:20px;
+}
+div.series_bar div.novel_bar ul.novel_box li  div.book_name{
+	margin-top:10px;
+	margin-left:10px;
+	font-size:16px;
+	color:#12b7f5;
+}
+
+div.series_bar div.novel_bar ul.novel_box li  b.abstract{
+	font-weight:normal;
+	font-size:14px;
+	color:#989797;
+	text-align:left;
+	display: -webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:2;
+	overflow: hidden;
+}
+div.series_bar div.novel_bar ul.novel_box li  p.author{
+	font-size:14px;
+	color:#515151;
+	background:url(../images/icon/作者.png)120px no-repeat;
+	background-size:20px 20px;
+	padding-left:150px;
+	margin-bottom:10px;
+}
+div.series_bar div.novel_bar ul.novel_box li  em{
+     font-style:normal;
+     border:1px solid;
+     margin-right:5px;
+     padding:2px;
+     font-size:10px;
+     border-radius:5px;
+}
+.yellow{
+	color:#FFA100;
+}
+.red{
+	color:#FF3955;
+}
+.blue{
+	color:#4284EE;
+}
+/*小说系列 end*/

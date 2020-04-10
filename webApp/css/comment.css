@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#fff;
+}
+div#comment_bar{
+	width:100%;
+	overflow:hidden;
+}
+div#comment_bar li.comment_box{
+	padding:10px;
+	height:auto;
+	position:relative;
+	/*border-bottom:1px solid #eae4e4;*/
+}
+div#comment_bar li.comment_box img{
+	float:left;
+	width:40px;
+	height:40px;
+	vertical-align: middle;
+	margin-right:20px;
+}
+
+div#comment_bar li.comment_box span,p{
+	vertical-align: middle;
+}
+div#comment_bar li.comment_box h5{
+	padding:0 1px 0 30px;
+}

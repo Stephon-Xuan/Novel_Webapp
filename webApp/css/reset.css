@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,dl,dt,dd,td,img,div,input{margin: 0; padding: 0;}
+body{font-size:12px;}
+img{border:none;}
+ul,li{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none;color:#000;}
+a:hover{-webkit-tap-highlight-color: transparent;}
+/*清浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+.fl{float:left;}
+.fr{float:right;}
+body{
+    background-color:#F5F4F4;
+}
+.hide{display:none;}
+.tip_bar{
+    margin:auto;
+	height:50px;
+	width:50%;
+	background-color:#485e63;
+	text-align: center;
+	position:fixed;
+	top:25%;
+	left:25%;
+	border-radius:5px;
+}
+div.tip_bar div{
+	font-size:18px;
+	vertical-align: center;
+	color:#fff;
+	margin-top:12px;
+}

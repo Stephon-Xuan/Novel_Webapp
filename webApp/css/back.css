@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+div.back_bar{
+	padding:15px;
+}
+div.back_bar img{
+	height:25px;
+	width:25px;
+	vertical-align: middle;
+}
+div.back_bar b{
+	float:right;
+	color:#FFF;
+	line-height:25px;
+	font-size:16px;
+	padding:1px 5px;
+	border-radius:5px;
+	background-color:#f31b00;
+}
+div.back_bar span{
+	font-size:16px;
+    vertical-align: middle;
+}
+div.back_bar  span.color1{
+	color: #000;
+}
+div.back_search_bar{
+	background-color:#fff;
+}
+div.back_bar img.sort_img{
+	vertical-align: middle;
+	position:fixed;
+	left:90%;	
+}
+/*排行榜*/
+.bg_color{
+	background-color:#12b7f5;
+	
+}
+.color2{
+	color:#fff;
+}

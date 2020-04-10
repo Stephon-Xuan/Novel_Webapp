@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* CSS Document */
+div#user_bar{
+	background-color:#1297DC;
+	
+}
+div#user_bar div.user_box {
+	margin-top:40px;
+	padding-bottom:30px;
+    width:100%;
+}
+div#user_bar div.user_box img {
+	height:40px;
+	width:40px;
+	margin:0 auto; 
+	border:1px solid #fff;
+	border-radius:50%;
+	background-color:#FFF;
+}
+div#user_bar div.user_box div.user_name {
+   font-size: 16px;
+	text-align: center;
+	
+}
+/*个人信息*/
+
+ul.user_data_bar{
+	margin-top:40px;
+}
+ul.user_data_bar li.user_data_box{
+	margin-top:5px;
+	background-color: #fff;
+	padding:10px;
+} 
+ul.user_data_bar li.user_data_box span{
+	font-size:18px;
+	vertical-align: middle;
+}
+ul.user_data_bar li.user_data_box  img{
+	height:25px;
+	width:25px;
+	vertical-align: middle;
+	float:right;
+	margin-left: 20px;
+}
+/*退出登录 begin*/
+div#user_exit_bar {
+	position:fixed;
+	z-index: 999;
+    bottom:10%;
+	width:100%;
+}
+div#user_exit_bar div#user_exit_box{
+    background-color: #EB2A2D;
+	margin:10px auto;
+	width:60%;
+	text-align: center;
+	padding:10px;
+}
+div#user_exit_bar div#user_exit_box  span{
+	font-size: 18px;
+	color:#FFF;
+}
+/*退出登录 end*/

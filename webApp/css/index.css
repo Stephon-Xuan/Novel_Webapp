@@ -1,0 +1,152 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*头部 begin*/
+.top_bar{
+	height:60px;
+	width:100%;
+	background-color:#fff;
+}
+.top_left .top_right{
+	display:inline-block;
+}
+
+
+.top_left img{
+	height:25px;
+	width:25px;
+	line-height:center;
+	left:20px;
+	top:17px;
+	position:absolute;
+}
+.top_left span{
+	margin-left:50px;
+     font-size:14px;
+	line-height:60px;
+}
+
+.top_right img{
+	height:25px;
+	width:25px;
+	line-height:center;
+	right:20px;
+	top:17px;
+	position:absolute;
+}
+/*头部 end*/
+
+
+
+
+/*搜索 begin*/
+.search_bar{
+	heigth:50px;
+	margin-top:5px;
+}
+.search_box{
+	height:20px;
+	border:1px solid #E5E5E5; 
+	border-radius:20px;
+	width:80%;
+	padding:3px;
+	font-fize:14px;
+	margin-left:8%;
+	line-height:20px;
+}
+.search_bar img{
+	heght:15px;
+	width:15px;
+	margin-left:40%;
+	margin-bottom:-3px;
+}
+.search_bar p{
+	font-size:14px;
+	margin-left:10px;
+	text-align:center;
+	display:inline-block;
+	color:#C8C5C5;
+}
+/*搜索 end*/
+
+/*轮播图 begin*/
+.sowing_bar{
+	width:95%;
+	position:relative;
+	margin:5px auto;
+	overflow:hidden;
+}
+
+.sowing_img{
+	width:500%;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+}
+
+.sowing_img li{
+	width:20%;
+	float:left;
+}
+
+.sowing_img li img{
+	width:100%;
+	height:250px;
+	margin:5px auto;
+}
+
+.sowing_button{
+	width:128px;
+	height:10px;
+	position:absolute;
+	left:50%;
+	bottom:5px;
+	transform:translateX(-30%);/*向左移动百分*/
+}
+.sowing_button li{
+	width:6px;
+	height:6px;
+	border-radius:3px;
+	border:1px solid #fff;
+	float:left;
+	margin-left:10px;
+	
+}
+
+.sowing_button li:first-of-type{
+	margin-left:0;               /*给首个li重置*/
+}
+.sowing_button li.active{
+	background-color:#12b7f5;
+}
+/*轮播图 end*/
+
+/*导航 begin*/
+.nav_bar{
+	background-color:#FDFDFD; 
+	height:50px;
+	padding:5px;
+	margin:20px auto;
+}
+.nav_box{
+	margin:5px auto;
+}
+.nav_box li{
+	float:left;
+	font-size:14px;
+	color:#000000;
+	line-height:40px;
+	width:25%;
+	height:40px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.nav_box li img{
+	width:25px;
+	height:25px;
+	vertical-align: middle;
+	margin-right:5px;
+}
+/*导航 end*/
+
