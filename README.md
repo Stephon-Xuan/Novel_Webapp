@@ -5,4 +5,4 @@ http://stephon.cn/novel/webApp/index.html
 
 ## 小说后台管理系统
 
-http://stephon.cn/novel/manager/index.html
+http://stephon.cn/novel/manager/login.html
