@@ -5,7 +5,8 @@
  * @version $Id$
  */
 //隐藏右侧
-var manger  = JSON.parse(window.localStorage.manger);
+// var manger  = JSON.parse(window.localStorage.manger);
+var manger = 1;//默认给超级会员
 function left_hide() {
     var manage_control = document.getElementsByName('manage_control');
     for (var i = 0; i < manage_control.length; i++) {
