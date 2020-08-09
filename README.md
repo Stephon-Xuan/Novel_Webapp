@@ -1,8 +1,8 @@
 # 小说在线阅读项目
 ## 小说webApp
 
-http://stephon.cn/novel/webApp/index.html
+http://Stephon-Xuan/novel/webApp/index.html
 
 ## 小说后台管理系统
 
-http://stephon.cn/novel/manager/login.html
+http://Stephon-Xuan/novel/manager/login.html
